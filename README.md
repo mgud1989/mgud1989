@@ -1,14 +1,14 @@
 # Miguel Alejandro Gudiño Espejo
-**Infrastructure & AI Specialist | Platform Engineer**
- 📍 Buenos Aires, Argentina
- 📧 m.gud1989@gmail.com | 🔗 [LinkedIn](https://linkedin.com/in/mgud) | 💻 [GitHub](https://github.com/mgud1989)
+**Infrastructure & Platform Engineer | AI Specialist**\
+📍 Buenos Aires, Argentina\
+📧 m.gud1989@gmail.com | 🔗 [LinkedIn](https://linkedin.com/in/mgud) | 💻 [GitHub](https://github.com/mgud1989)
 
 ---
 
-## Perfil Profesional
+## 👷 Perfil Profesional
 Ingeniero de Infraestructura orientado a **Site Reliability (SRE)** y **Platform Engineering**. Especialista en optimizar el ciclo de vida del desarrollo mediante IaC, Observabilidad y automatización. Actualmente liderando la convergencia entre **Infraestructura e Inteligencia Artificial Generativa**, desarrollando agentes de AI para clientes finales y herramientas internas para potenciar la productividad técnica.
 
-## Áreas de Expertise
+### Áreas de Expertise
 * **Cloud:** AWS (Expertise en múltiples servicios), GCP (Fundamentos).
 * **IA & Agentes:** AWS Bedrock, AgentCore, StrandsAgents, RAG pipelines, Prompt Engineering, Model Context Protocol (MCP), Skills.
 * **Infraestructura como Código:** CloudFormation, Serverless Framework, Terraform.
@@ -18,7 +18,7 @@ Ingeniero de Infraestructura orientado a **Site Reliability (SRE)** y **Platform
 
 ---
 
-## Experiencia Profesional
+## 📄 Experiencia Profesional
 
 ### Janis Commerce
 **Infrastructure & AI Specialist** | *2021 – Presente*
@@ -34,13 +34,13 @@ Ingeniero de Infraestructura orientado a **Site Reliability (SRE)** y **Platform
 
 ---
 
-## Educación
+## 🎓 Educación
 * **Técnico Superior en Informática** | Instituto Universitario de Tecnología Dr. Federico Rivero Palacio.
 * **Técnico en Mantenimiento de Vías Férreas** | IUTOMS (2013).
 
 ---
 
-## Certificaciones y Formación Continua
+## 📚 Certificaciones y Formación Continua
 * **Máster de Inteligencia Artificial** | BIG School, España (2025).
 * **AWS Certified Cloud Practitioner** | Amazon Web Services (2021).
 * **AWS CloudFormation Master Class** | Udemy (2021).
@@ -50,5 +50,5 @@ Ingeniero de Infraestructura orientado a **Site Reliability (SRE)** y **Platform
 
 ---
 
-## Tecnologías & Herramientas
-`Python` `JavaScript` `Cursor` `Bash` `MongoDB` `SQL` `Git` `CloudFormation` `AWS Bedrock` `StrandsAgents` `Jira` `BitBucket Pipelines` `Docker`
+## 🧰 Tecnologías & Herramientas
+`Python` `JavaScript` `Cursor` `Bash` `MongoDB` `SQL` `Git` `CloudFormation` `AWS_Bedrock` `StrandsAgents` `Jira` `BitBucket_Pipelines` `Docker`
