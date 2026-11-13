@@ -2,7 +2,7 @@
 
 **Infrastructure & Platform Engineer | AI Enablement & Harness Engineering**\
 📍 Buenos Aires, Argentina\
-📧 m.gud.ops@proton.me | 🔗 [LinkedIn](https://linkedin.com/in/mgud) | 💻 [GitHub](https://github.com/mgud1989)
+📧 m.gud.ops@proton.me | 🔗 [LinkedIn](https://linkedin.com/in/mgud) | 💻 [GitHub](https://github.com/mgud1989) | 📄 [CV en PDF](miguel-gudino.pdf)
 
 ---
 

@@ -24,6 +24,8 @@ body = body.replace(/<h2>([\s\S]*?)<\/h2>/g, (_, inner) =>
   `<h2>${inner.replace(/\p{Extended_Pictographic}️?\s*/gu, '').trim()}</h2>`);
 // 2. Tech tags read as words, not identifiers: `Serverless_Framework` -> "Serverless Framework".
 body = body.replace(/<code>([^<]*)<\/code>/g, (_, t) => `<code>${t.replace(/_/g, ' ')}</code>`);
+// 2b. The PDF does not link to itself: drop the "CV en PDF" entry from the contact line.
+body = body.replace(/\s*\|\s*\p{Extended_Pictographic}?️?\s*<a href="[^"]*\.pdf">[^<]*<\/a>/gu, '');
 // 3. Horizontal rules are replaced by the section heading style.
 body = body.replace(/<hr>\n?/g, '');
 // 4. Stable ids on h2/h3 (slug of the text) so style.css can control page layout per section.
