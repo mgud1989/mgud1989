@@ -1,0 +1,111 @@
+/* Recruiter-facing CV layout. Goal: scannable in ~30 seconds, 3 A4 pages max. */
+
+:root {
+  --ink: #1f2933;
+  --muted: #52606d;
+  --accent: #1d4ed8;
+  --rule: #cbd2d9;
+  --tag-bg: #eef2f7;
+}
+
+@page {
+  size: A4;
+  margin: 1.3cm 1.5cm 1.2cm 1.5cm;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--ink);
+  font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 9.6pt;
+  line-height: 1.42;
+}
+
+/* Header ------------------------------------------------------------- */
+h1 {
+  margin: 0 0 2pt;
+  font-size: 21pt;
+  font-weight: 700;
+  letter-spacing: -0.2pt;
+}
+
+h1 + p { margin: 0 0 4pt; color: var(--muted); }
+h1 + p strong { display: inline-block; margin-bottom: 3pt; color: var(--accent); font-size: 11pt; font-weight: 600; }
+
+/* Sections ----------------------------------------------------------- */
+h2 {
+  margin: 13pt 0 6pt;
+  padding-bottom: 2pt;
+  border-bottom: 1.2pt solid var(--accent);
+  color: var(--accent);
+  font-size: 10.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8pt;
+  break-after: avoid;
+}
+
+h3 {
+  margin: 9pt 0 3pt;
+  font-size: 11pt;
+  font-weight: 700;
+  break-after: avoid;
+}
+
+/* Role line + "Evolución del rol" under the company name */
+h3 + p { margin: 0 0 5pt; color: var(--muted); }
+h3 + p strong { color: var(--ink); }
+
+p { margin: 0 0 5pt; }
+
+strong { font-weight: 600; }
+
+a { color: var(--accent); text-decoration: none; }
+
+/* Lists -------------------------------------------------------------- */
+ul { margin: 0 0 4pt; padding-left: 13pt; }
+li { margin: 0 0 3pt; break-inside: avoid; }
+li > p { margin: 0; }
+li > p + p { margin-top: 3pt; }
+li > ul { margin-top: 2pt; }
+li li { margin-bottom: 2pt; }
+
+/* Long parent bullets (with nested lists) may split, but never mid-sub-bullet */
+li:has(> ul) { break-inside: auto; }
+
+/* Tags --------------------------------------------------------------- */
+code {
+  display: inline-block;
+  margin: 0 1pt 3pt 0;
+  padding: 0.5pt 5pt;
+  border-radius: 3pt;
+  background: var(--tag-bg);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 8.6pt;
+  white-space: nowrap;
+}
+
+/* MCP names inside bullets: inline, not stacked */
+li code { margin-bottom: 0; }
+
+/* Keep a heading with the content that follows it */
+h2 + *, h3 + * { break-before: avoid; }
+
+/* Short section lists (education, certifications) stay on one page */
+h2 + ul { break-inside: avoid; }
+
+/* Page plan --------------------------------------------------------- */
+/* p1: header + profile + expertise (more air) · p2: Janis · p3: previous roles + the rest */
+#s-perfil-profesional p { margin-bottom: 9pt; }
+#s-perfil-profesional li { margin-bottom: 7pt; }
+#s-perfil-profesional h3 { margin-top: 16pt; }
+#s-perfil-profesional h2 { margin-top: 30pt; }
+#s-experiencia-profesional { break-before: page; }
+#s-experiencia-profesional h2 { margin-top: 0; }
+#soporte-tecnico-e-infraestructura-roles-previos { break-before: page; margin-top: 0; }

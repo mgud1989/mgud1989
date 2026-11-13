@@ -1,0 +1,12 @@
+{
+  "name": "cv-pdf",
+  "private": true,
+  "type": "module",
+  "description": "Builds the recruiter-facing PDF from README.md",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "markdown-it": "14.1.0"
+  }
+}
